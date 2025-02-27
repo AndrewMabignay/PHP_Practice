@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Receipt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .receipt-container {
+            background: white;
+            padding: 25px; /* Mas malaking padding for better spacing */
+            border-radius: 12px; /* Mas smooth na rounded corners */
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            width: 360px;
+            text-align: center;
+        }
+        .receipt-header {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            border-bottom: 3px solid #27ae60;
+            padding-bottom: 12px;
+        }
+        .receipt-content {
+            text-align: left;
+            font-size: 17px;
+            margin: 18px 0;
+            color: #555;
+            padding: 10px;
+            background: #f9f9f9; /* Light gray background for better separation */
+            border-radius: 8px;
+        }
+        .receipt-content p {
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .receipt-footer {
+            font-size: 15px;
+            color: #777;
+            margin-top: 15px;
+            border-top: 1px solid #ccc;
+            padding-top: 12px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<div class="receipt-container">
+    <div class="receipt-header">Rental Receipt</div>
+    <div class="receipt-content">
+        <p><strong>Customer:</strong> <span>Sarah</span></p>
+        <p><strong>Vehicle:</strong> <span>Sedan</span></p>
+        <p><strong>Rental Days:</strong> <span>3</span></p>
+        <p><strong>Total Cost:</strong> <span>$180</span></p>
+    </div>
+    <div class="receipt-footer">Thank you for choosing our service!</div>
+</div>
+
+</body>
+</html>
