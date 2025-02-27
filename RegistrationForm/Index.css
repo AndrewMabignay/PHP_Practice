@@ -1,0 +1,120 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); */
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4070F4;
+}
+
+.wrapper {
+    border-radius: 12px;
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    padding: 34px;
+    background: #FFF;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper :where(h2) {
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+
+.wrapper :where(h2)::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 28px;
+    border-radius: 12px;
+    background: #4070F4;
+}
+
+.wrapper :where(form) {
+    margin-top: 30px;
+}
+
+.wrapper :where(form) :where(.input-box) {
+    height: 52px;
+    margin: 18px 0;
+}
+
+.wrapper :where(form) :where(.input-box) :where(input) {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+    border: 1.5px solid #C7BEBE;
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.wrapper :where(form) :where(.input-box) :where(input):focus, 
+.wrapper :where(form) :where(.input-box) :where(input):valid {
+    border-color: #4070F4;
+}
+
+.wrapper :where(form) :where(.policy) {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper :where(form) :where(.policy) :where(h3) {
+    color: #707070;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+
+.wrapper :where(form) :where(.button) :where(input) {
+    color: #FFF;
+    letter-spacing: 1px;
+    border: none;
+    background: #4070F4;
+    cursor: pointer;
+}
+
+.wrapper :where(form) :where(.button) :where(input):hover {
+    background: #0E4BF1;
+}
+
+.wrapper :where(form) :where(.text) :where(h3) {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+    color: #333;
+    width: 100%;
+    text-align: center;
+}
+
+.wrapper :where(form) :where(.text) :where(h3) :where(a) {
+    color: #4070F4;
+    text-decoration: none;
+}
+
+.wrapper :where(form) :where(.text) :where(h3) :where(a):hover {
+    text-decoration: underline;
+}
